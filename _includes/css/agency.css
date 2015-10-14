@@ -176,7 +176,9 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    /*font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;*/
+    font-family: "Bitter","Helvetica Neue",Helvetica,Arial,cursive;
+    font-weight: 400;
     color: #{{ site.color.primary }};
 }
 
@@ -207,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 
 .navbar-default .nav li a {
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Bitter,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
     color: #fff;
@@ -291,7 +293,7 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
     margin-bottom: 25px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Podkova,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 700;
     line-height: 50px;
@@ -314,7 +316,7 @@ header .intro-text .intro-heading {
     header .intro-text .intro-heading {
         margin-bottom: 50px;
         text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-family: Podkova,"Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 75px;
         font-weight: 700;
         line-height: 75px;
@@ -338,6 +340,7 @@ section h3.section-subheading {
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
+    line-height: 150%;
 }
 
 @media(min-width:768px) {
@@ -538,8 +541,15 @@ section h3.section-subheading {
 }
 
 .timeline .timeline-body>p,
-.timeline .timeline-body>ul {
+.timeline .timeline-body>ul,
+.timeline .timeline-body>ol {
     margin-bottom: 0;
+    font-size: 14px;
+}
+
+.timeline .timeline-body em {
+  color: #{{ site.color.secondary }};
+  background-color: #{{ site.color.secondary-dark }};
 }
 
 @media(min-width:768px) {
